@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Orbitron',sans-serif;
+}
+
+body{
+  min-height:100vh;
+  background:linear-gradient(135deg,#050816,#0f172a,#1e1b4b);
+  overflow:hidden;
+}
+
+.container{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.form-box{
+  width:420px;
+  padding:40px;
+  border-radius:25px;
+  background:rgba(255,255,255,0.05);
+  backdrop-filter:blur(20px);
+  border:1px solid rgba(255,255,255,0.1);
+
+  box-shadow:
+  0 0 30px rgba(0,255,255,.2),
+  0 0 60px rgba(0,255,255,.1);
+
+  transform-style:preserve-3d;
+  transition:.5s;
+}
+
+.form-box:hover{
+  transform:
+  rotateX(8deg)
+  rotateY(-8deg)
+  translateY(-10px);
+}
+
+.form-box h2{
+  text-align:center;
+  color:#fff;
+  font-size:32px;
+  margin-bottom:30px;
+  letter-spacing:3px;
+
+  text-shadow:
+  0 0 10px cyan,
+  0 0 20px cyan,
+  0 0 40px cyan;
+}
+
+.form-box input{
+  width:100%;
+  padding:15px;
+  margin:12px 0;
+  border:none;
+  border-radius:12px;
+  outline:none;
+
+  background:rgba(255,255,255,.08);
+  color:white;
+  font-size:14px;
+
+  box-shadow:
+  inset 0 0 10px rgba(255,255,255,.1);
+}
+
+.form-box input::placeholder{
+  color:#bdbdbd;
+}
+
+.form-box button{
+  width:100%;
+  padding:15px;
+  margin-top:15px;
+  border:none;
+  border-radius:12px;
+  cursor:pointer;
+
+  background:linear-gradient(
+  45deg,
+  #00ffff,
+  #00ff88
+  );
+
+  color:#000;
+  font-size:16px;
+  font-weight:700;
+
+  box-shadow:
+  0 0 20px cyan,
+  0 0 40px cyan;
+
+  transition:.3s;
+}
+
+.form-box button:hover{
+  transform:translateY(-5px);
+  box-shadow:
+  0 0 30px cyan,
+  0 0 60px cyan;
+}
+
+.form-box p{
+  margin-top:20px;
+  text-align:center;
+  color:white;
+  font-size:13px;
+}
+
+.form-box a{
+  color:#00ffff;
+  text-decoration:none;
+}
+
+.form-box a:hover{
+  text-shadow:0 0 10px cyan;
+}
